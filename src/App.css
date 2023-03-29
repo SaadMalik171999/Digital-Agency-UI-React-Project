@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+:root {
+  --button-color: #5454D4;
+  --white: #ffffff;
+  --bg-color: #19191B;
+  --heading-text: 80px;
+  --mobile-heading-text: 50px;
+  --tablet-heading-text: 70px;
+  --padding-container: 10px 70px;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Secular One', sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.pageNotFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  height: 100vh;
+}
+
+/*  Hero Section CSS */
+
+.hero_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--padding-container);
+  color: var(--white);
+
+}
+
+.hero_left h1 {
+  margin-top: 40px;
+  font-size: var(--heading-text);
+  width: 100%;
+}
+
+.hero_left p {
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 50px;
+  width: 80%;
+
+}
+
+.service_button {
+  margin-top: 50px;
+  padding: 15px 34px;
+  background-color: var(--button-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  justify-content: center;
+  border: none;
+  font-family: 'Secular One', sans-serif;
+}
+
+.service_button:hover {
+  background-color: var(--white);
+  color: var(--button-color);
+}
+
+
+.hero_right img {
+  height: 700px;
+}
+
+.arrow_icon {
+  margin-left: 10px;
+  stroke-width: 1.2;
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .hero_section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero_left h1 {
+    font-size: var(--mobile-heading-text);
+  }
+
+  .hero_left p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .service_button {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .hero_right img {
+    height: 370px;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .hero_section {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px;
+    align-items: center;
+
+  }
+
+  .hero_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero_left h1 {
+    font-size: var(--tablet-heading-text);
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .hero_left p {
+    font-size: 40px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .service_button {
+    padding: 20px 40px;
+    font-size: 30px;
+  }
+
+  .hero_right img {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  .hero_section {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+/*  Hero Section CSS */
+
+/*  Portfolio Section CSS */
+
+.portfolio_section {
+
+  padding: var(--padding-container);
+}
+
+.portfolio_section h1 {
+  text-align: center;
+  font-size: var(--heading-text);
+  margin-bottom: 80px;
+  color: var(--white);
+}
+
+.carousel_pic {
+  text-align: center;
+}
+
+
+.carousel_pic img {
+  border-radius: 15px;
+}
+
+.cvyJEp:hover:enabled,
+.cvyJEp:focus:enabled {
+  background-color: #5454D4 !important;
+}
+
+.cqQwrw {
+  background-color: #5454D4 !important;
+  box-shadow: #2c2c85 0px 0px 1px 3px !important;
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .hnvVol {
+    width: 160% !important;
+  }
+
+  .portfolio_section h1 {
+    font-size: var(--mobile-heading-text);
+    text-align: center;
+  }
+
+  .carousel_pic img {
+    background-size: contain !important;
+    border-radius: 20px;
+  }
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .hnvVol {
+    width: 90% !important;
+  }
+
+  .portfolio_section h1 {
+    font-size: var(--tablet-heading-text);
+    text-align: center;
+  }
+}
+
+/*  Portfolio Section CSS */
+
+/*  Service Section CSS */
+
+.service_section {
+  padding: var(--padding-container);
+}
+
+.service_section h1 {
+  font-size: var(--heading-text);
+  color: var(--white);
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.service_sub_section {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.service_div {
+  padding: 10px 0px;
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 10px;
+}
+
+.service_div h1 {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.service_div p {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  color: rgb(185, 184, 184);
+  font-size: 17px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .service_section {
+    padding: 0px 50px;
+  }
+
+  .service_section h1 {
+    font-size: var(--mobile-heading-text);
+    text-align: start;
+    width: 100%;
+    text-align: center;
+  }
+
+  .service_div {
+    width: 100%;
+  }
+
+  .service_div h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .service_sub_section {
+    margin-top: 0px;
+  }
+
+  .service_div p {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .service_div img {
+    width: 60px;
+  }
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .service_div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .service_section {
+    padding: 0px 0px;
+  }
+
+  .service_div {
+    width: 100%;
+  }
+
+  .service_div h1 {
+    font-size: 60px !important;
+    text-align: center;
+  }
+
+  .service_div p {
+    font-size: 40px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .service_sub_section {
+    margin-top: 0px;
+  }
+
+  .service_div img {
+    width: 120px;
+  }
+
+  .service_div {
+    margin: 60px;
+  }
+
+  .service_section h1 {
+    padding: 30px 0px;
+    font-size: var(--tablet-heading-text);
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+
+
+}
+
+/*  Service Section CSS */
+
+
+/*  Contact Section CSS */
+
+.contact_section {
+  padding: var(--padding-container);
+}
+
+.contact_sub_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  color: var(--white);
+
+}
+
+.contact_sub_section h1 {
+  width: 60%;
+  font-size: var(--heading-text);
+
+}
+
+.contact_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: gray;
+  font-size: 20px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.contact_sub_footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_sub_footer ul li {
+  padding: 0px 20px;
+  list-style: none;
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .contact_sub_section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .contact_sub_section h1 {
+    width: 100%;
+    text-align: center;
+    font-size: var(--mobile-heading-text);
+
+  }
+
+  .contact_button {
+    padding: 20px 40px;
+    font-size: 25px;
+  }
+
+  .contact_footer {
+    padding-top: 120px;
+    flex-direction: column;
+    font-size: 23px;
+  }
+
+  .contact_sub_footer ul {
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .contact_sub_footer ul li {
+    padding: 20px 0px;
+  }
+
+  .contact_footer h3 {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .contact_sub_section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact_sub_section h1 {
+    text-align: center;
+    width: 100%;
+    font-size: var(--tablet-heading-text);
+
+  }
+
+  .contact_button {
+    padding: 30px 80px;
+    font-size: 30px;
+  }
+
+  .contact_footer {
+    padding-top: 120px;
+    flex-direction: column;
+    font-size: 26px;
+  }
+
+  .contact_sub_footer ul {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .contact_sub_footer ul li {
+    padding: 20px 0px;
+  }
+
+  .contact_footer h3 {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/*  Contact Section CSS */
